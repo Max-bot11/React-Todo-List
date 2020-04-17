@@ -45,6 +45,11 @@ class App extends React.Component {
     this.setState({ data: newData });
   }
 
+  handleEdit = (index) => {
+    const newData = [...this.state.data];
+    newData.slice(index)
+  }
+
   render(){
     return (
       <div className="figures-list">
